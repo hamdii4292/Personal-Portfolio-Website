@@ -80,7 +80,7 @@ span {
     color: var(--main-color);
 }
 
-/* --- Sticky Navbar --- */
+/* --- ya Navbar ke styling ha--- */
 .navbar {
     position: fixed;
     top: 0;
@@ -122,7 +122,7 @@ span {
     color: var(--main-color);
 }
 
-/* --- Hero Section with Profile Pic on Left --- */
+/* --- ya Hero Section styling ha --- */
 .hero {
     background: linear-gradient(135deg, #1f242d 40%, #153448 100%);
     display: flex;
@@ -147,7 +147,7 @@ span {
     border: 4px solid var(--main-color);
     box-shadow: 0 0 2rem var(--main-color);
 }
-/* --- Social Media Circles --- */
+/* --- Ya Social Media links ke Styling ha --- */
 .social-media {
     display: flex;
     gap: 1.5rem;
@@ -207,7 +207,7 @@ span {
     }
 }
 
-/* --- About Section (Profile Pic Styling) --- */
+/* --- About Section (Profile Pic ke Styling) --- */
 .about {
     background-color: var(--second-bg-color);
 }
@@ -248,7 +248,7 @@ span {
     line-height: 1.6;
 }
 
-/* --- Projects Section (CSS Grid Layout) --- */
+/* --- Ya Projects Section ha (CSS Grid Layout) --- */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -302,7 +302,7 @@ span {
     gap: 0.8rem;
 }
 
-/* --- Contact Section --- */
+/* --- Ya Contact Section ha--- */
 .contact {
     background-color: var(--second-bg-color);
 }
@@ -351,7 +351,7 @@ span {
     color: #cbd5e1;
 }
 
-/* --- Responsive Media Queries (Mobile & Tablet) --- */
+/* --- Responsive Media Queries ha (Mobile & Tablet) --- */
 @media (max-width: 992px) {
     section {
         padding: 5rem 5% 2rem;
@@ -370,30 +370,56 @@ span {
 
 @media (max-width: 768px) {
     .navbar {
-        padding: 1rem 5%;
+        padding: 1.3rem 5%;
     }
-    
+
+    /* Show the 3 horizontal lines button */
+    .menu-toggle {
+        display: block;
+        background: transparent;
+        border: none;
+        color: var(--text-color);
+        font-size: 1.8rem;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .menu-toggle:hover {
+        color: var(--main-color);
+    }
+
+    /* Style the mobile dropdown menu layout */
     .nav-links {
-        display: none;
-    }
-
-    .hero {
-        text-align: center;
-        justify-content: center;
-    }
-
-    .hero-buttons {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--bg-color);
+        border-bottom: 2px solid var(--second-bg-color);
+        padding: 1.5rem 0;
+        gap: 1.5rem;
+        text-align: center;
+        
+        /* Hide it by default off-screen or collapsed */
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-10px);
+        transition: 0.3s ease;
     }
 
-    .input-group {
-        flex-direction: column;
-        gap: 1.5rem;
+    /* When JavaScript adds the 'active' class, show the menu */
+    .nav-links.active {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
     }
-    
-    .profile-photo {
-        width: 250px;
-        height: 250px;
+}
+
+/* Hide the three lines button on Desktop screens */
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none;
     }
 }
