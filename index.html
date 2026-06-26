@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hammad Rasheed | Full-Stack Developer Portfolio</title>
+        <!-- Font Awesome for Social Icons -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <!-- Sticky Navigation Bar -->
+        <header class="navbar">
+            <div class="nav-container">
+                <a href="#" class="logo">Hammad<span>Rasheed</span></a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-img">
+                    <img src="profile.jpg" alt="Hammad Rasheed Profile"
+                        class="hero-profile-photo">
+                </div>
+
+                <div class="hero-content">
+                    <h3>Hello, I'm</h3>
+                    <h1>Hammad Rasheed</h1>
+                    <p>And I'm a <span>Full-Stack Developer</span>. Building
+                        scalable web applications with robust backends and clean
+                        user interfaces.</p>
+
+                    <div class="social-media">
+                        <a
+                            href="https://www.linkedin.com/in/hammad-rasheed-3883202a3/"
+                            target="_blank"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/hamdii4292"
+                            target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/hamdii____o"
+                            target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                       
+                    </div>
+
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Contact
+                            Me</a>
+                        <a href="Hammad_Rasheed_CV.pdf"
+                            download="Hammad_Rasheed_CV.pdf"
+                            class="btn btn-secondary">Download CV</a>
+                    </div>
+                </section>
+
+                <!-- About Me Section -->
+                <section id="about" class="about">
+                    <div class="about-container">
+                        <div class="about-img">
+                            <!-- Drop your profile photo in the same folder and name it profile.jpg -->
+                            <img src="photo.jpg" alt="Hammad Rasheed Profile"
+                                class="profile-photo">
+                        </div>
+                        <div class="about-text">
+                            <h2>About <span>Me</span></h2>
+                            <h3>Full-Stack Developer</h3>
+                            <p>I am a passionate Full-Stack Developer focused on
+                                creating efficient, reliable, and modern digital
+                                solutions. I specialize in breaking down complex
+                                architectural problems into elegant,
+                                maintainable code across both client-side and
+                                server-side environments.</p>
+                            <p>Equipped with a deep understanding of software
+                                engineering principles, I continuous stay ahead
+                                of industry standards to optimize system
+                                performance and craft smooth user
+                                experiences.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Projects Section -->
+                <section id="projects" class="projects">
+                    <h2 class="section-title">My <span>Projects</span></h2>
+                    <div class="projects-grid">
+                        <!-- Project Card 1 -->
+                        <div class="project-card">
+                            <i class="fa-solid fa-code card-icon"></i>
+                            <h3>Frontend Architecture</h3>
+                            <p>Developing highly interactive, fast, and
+                                accessible modern interfaces using semantic
+                                layouts and responsive design strategies.</p>
+                            <a href="#" class="read-more-link">Read More <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                        <!-- Project Card 2 -->
+                        <div class="project-card">
+                            <i class="fa-solid fa-server card-icon"></i>
+                            <h3>Backend Systems</h3>
+                            <p>Designing secure server side logic, database
+                                handling, structures, and building scalable
+                                custom RESTful APIs.</p>
+                            <a href="#" class="read-more-link">Read More <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                        <!-- Project Card 3 -->
+                        <div class="project-card">
+                            <i class="fa-solid fa-layer-group card-icon"></i>
+                            <h3>Full-Stack Deployment</h3>
+                            <p>Integrating complex frontend frameworks smoothly
+                                with reliable database storage and configuring
+                                cloud application ecosystems.</p>
+                            <a href="#" class="read-more-link">Read More <i
+                                    class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </section>
+                <!-- Contact Section -->
+                <section id="contact" class="contact">
+                    <h2 class="section-title">Contact <span>Me</span></h2>
+                    <div class="contact-container">
+                        <form class="contact-form"
+                            onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                            <div class="input-group">
+                                <input type="text" placeholder="Full Name"
+                                    required>
+                                <input type="email" placeholder="Email Address"
+                                    required>
+                            </div>
+                            <div class="input-group">
+                                <input type="tel" placeholder="Mobile Number">
+                                <input type="text" placeholder="Email Subject">
+                            </div>
+                            <textarea cols="30" rows="10"
+                                placeholder="Your Message" required></textarea>
+                            <button type="submit" class="btn btn-primary">Send
+                                Message</button>
+                        </form>
+                    </div>
+                </section>
+
+                <!-- Footer -->
+                <footer class="footer">
+                    <p>&copy; 2026 Hammad Rasheed - All Rights Reserved</p>
+                </footer>
+
+            </body>
+        </html>
