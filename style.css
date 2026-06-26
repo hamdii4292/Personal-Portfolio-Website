@@ -415,6 +415,28 @@ span {
         pointer-events: auto;
         transform: translateY(0);
     }
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+     .social-media {
+        justify-content: center; /* Horizontally centers the circles */
+        width: 100%;
+    }
+
+    /* ADD THIS TO CENTER BOTH BUTTONS SMOOTHLY ON SMALLER SCREENS */
+    .hero-buttons {
+        display: flex;
+        flex-direction: column; /* Stacks buttons on extremely small devices if needed */
+        align-items: center;
+        gap: 1.5rem;
+        width: 100%;
+    }
+
+    .btn-secondary {
+        margin-left: 0; /* Clears desktop side-margin spacing */
+    }
 }
 
 /* Hide the three lines button on Desktop screens */
