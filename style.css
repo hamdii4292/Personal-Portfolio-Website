@@ -248,7 +248,7 @@ span {
     line-height: 1.6;
 }
 
-/* --- Ya Projects Section ha (CSS Grid Layout) --- */
+/* --- Ya Services Section ha (CSS Grid Layout) --- */
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
