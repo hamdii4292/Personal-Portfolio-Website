@@ -249,7 +249,7 @@ span {
 }
 
 /* --- Ya Projects Section ha (CSS Grid Layout) --- */
-.projects-grid {
+.services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
@@ -258,7 +258,7 @@ span {
     width: 100%;
 }
 
-.project-card {
+.services-card {
     background-color: var(--second-bg-color);
     padding: 3rem 2rem;
     border-radius: 2rem;
@@ -266,7 +266,7 @@ span {
     border: 2px solid transparent;
     transition: 0.4s ease;
 }
-.project-card:hover {
+.services-card:hover {
     border-color: var(--main-color);
     transform: scale(1.02);
 }
@@ -277,12 +277,12 @@ span {
     margin-bottom: 1.5rem;
 }
 
-.project-card h3 {
+.services-card h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
-.project-card p {
+.services-card p {
     font-size: 0.95rem;
     color: #cbd5e1;
     line-height: 1.6;
